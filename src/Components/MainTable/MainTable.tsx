@@ -10,7 +10,7 @@ import type { Character } from "../../Types/Character.ts";
 function MainTable() {
 
     const [charactersArray, setCharactersArray] = useState<Character[]>([]);
-    const [charactersInfo, setCharactersInfo] = useState([]);
+    const [, setCharactersInfo] = useState([]);
     const { getCharacters } = useCharacter();
     const getCharactersList = async () => {
         const characters = await getCharacters();
