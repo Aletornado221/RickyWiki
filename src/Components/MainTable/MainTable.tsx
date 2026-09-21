@@ -23,8 +23,10 @@ function MainTable() {
     }, []);
 
     return (
-        <div>
-            <CharacterCard {...charactersArray[0]} />
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px', padding: '20px' }}>
+            {charactersArray.map((character) => (
+                <CharacterCard key={character.id} {...character} />
+            ))}
         </div>
     )
 }

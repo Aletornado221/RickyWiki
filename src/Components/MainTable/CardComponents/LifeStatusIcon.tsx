@@ -1,4 +1,4 @@
-import { Chip, createTheme, Icon, Stack, ThemeProvider } from "@mui/material";
+import { Chip, createTheme, Stack, ThemeProvider } from "@mui/material";
 import type { Character } from "../../../Types/Character";
 
 const theme = createTheme({
